@@ -42,11 +42,11 @@ if opciones == 'Presentación':
     col1, col2 = st.columns(2)
 
     # Caption: etiqueta debajo de la foto
-    col1.image("Foto_Ariana.jpg", caption='Ariana', width=300)
+    col1.image("Foto_Ariana.jpg", caption='Ariana Jáuregui', width=300)
 
     # 3 comillas para los textos
     texto = """
-    Este blog pertenece a Ariana Jáuregui Rojas, estudiante de Publicidad en la PUCP. 
+    Soy Ariana Jáuregui Rojas, estudiante de Publicidad en la PUCP y editora de este blog. 
     Tengo 22 años y voy a mitad de la carrera. Me considero una persona con diferentes intereses y curiosidad por aprender. 
     Por ello, el curso Pensamiento Computacional me interesa, porque el lenguaje de programación es 
     algo que no había aprendido antes. Además de lo académico, uno de mis hobbies es el karate. 
