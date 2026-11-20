@@ -6,6 +6,7 @@
 # python -m streamlit run PC4_duo.py
 # ojo: detengo la ejecución con Ctrl + C en el terminal
     # y lo reestablezco con "python -m streamlit run PC4_duo.py" en el terminal 
+###
 
 
 import streamlit as st
