@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_02472e4347b06659af742f1df26e5c2a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_02472e4347b06659af742f1df26e5c2a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_02472e4347b06659af742f1df26e5c2a = L.map(
+                "map_02472e4347b06659af742f1df26e5c2a",
+                {
+                    center: [21.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_02472e4347b06659af742f1df26e5c2a);
+
+            
+
+        
+    
+            var tile_layer_04bad249e212791c6b00c0888347f281 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap contributors\u003c/a\u003e | Datos bajo licencia \u003ca href=\"https://opendatacommons.org/licenses/odbl/\"\u003eODbL\u003c/a\u003e",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+  "referrerPolicy": "strict-origin",
+}
+
+            );
+        
+    
+            tile_layer_04bad249e212791c6b00c0888347f281.addTo(map_02472e4347b06659af742f1df26e5c2a);
+        
+    
+            var marker_f8afda1f06043cd19e61aad6203660da = L.marker(
+                [-31.9535, 115.857],
+                {
+}
+            ).addTo(map_02472e4347b06659af742f1df26e5c2a);
+        
+    
+            var icon_e8d5622bc30346e05c6b94c360dd1b4c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_28f2bcd348a560faa2f2423b17af9667 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_bbe7a0a0d461050892dc5287ff4f09d6 = $(`<div id="html_bbe7a0a0d461050892dc5287ff4f09d6" style="width: 100.0%; height: 100.0%;">                 <div style="text-align:center; margin-bottom:15px;">                      <img src="https://content.api.news/v3/images/bin/72d93772c00f2eb97c69fa0fd2ca5292?width=1280"                          width="170"                          height="150"                          style="object-fit:cover; border-radius:50%;">                      <h1><b>D. Ricciardo</b><h1>                     <h2>Escudería: Red Bull Racing.</h2>                     <p>Puntaje total de la temporada 2016: 256.</p>                  </div>                 </div>`)[0];
+                popup_28f2bcd348a560faa2f2423b17af9667.setContent(html_bbe7a0a0d461050892dc5287ff4f09d6);
+            
+        
+
+        marker_f8afda1f06043cd19e61aad6203660da.bindPopup(popup_28f2bcd348a560faa2f2423b17af9667)
+        ;
+
+        
+    
+    
+                marker_f8afda1f06043cd19e61aad6203660da.setIcon(icon_e8d5622bc30346e05c6b94c360dd1b4c);
+            
+    
+            var marker_92207ccab6e4c93d70f76ae27d6f5995 = L.marker(
+                [20.6774, -103.3475],
+                {
+}
+            ).addTo(map_02472e4347b06659af742f1df26e5c2a);
+        
+    
+            var icon_00e774f9d5038f7b96d696a4b23b6b5c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3eebf0fc514f8fcdb4c308eb21d472ec = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_4dff4a410d6428678286bcfaefa37556 = $(`<div id="html_4dff4a410d6428678286bcfaefa37556" style="width: 100.0%; height: 100.0%;">                 <div style="text-align:center; margin-bottom:15px;">                      <img src="https://www.atraccion360.com/media/aa/force-india-checo-perez-podium-monaco-grand-prix_0.jpg"                          width="170"                          height="150"                          style="object-fit:cover; border-radius:50%;">                      <h1><b>S. Perez</b><h1>                     <h2>Escudería: Sahara Force India F1 Team.</h2>                     <p>Puntaje total de la temporada 2016: 101.</p>                  </div>                 </div>`)[0];
+                popup_3eebf0fc514f8fcdb4c308eb21d472ec.setContent(html_4dff4a410d6428678286bcfaefa37556);
+            
+        
+
+        marker_92207ccab6e4c93d70f76ae27d6f5995.bindPopup(popup_3eebf0fc514f8fcdb4c308eb21d472ec)
+        ;
+
+        
+    
+    
+                marker_92207ccab6e4c93d70f76ae27d6f5995.setIcon(icon_00e774f9d5038f7b96d696a4b23b6b5c);
+            
+</script>
+</html>
