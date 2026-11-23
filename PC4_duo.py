@@ -97,16 +97,16 @@ elif  opciones == 'Experiencia':
                        "https://drive.google.com/file/d/13ww94f97Xn78QM7iEC6ypONKSaBR2Sop/view?usp=drive_link",
                        use_container_width=True
             )
- # Para centrar un botón 
+    # video 2 de Ariana
     # creamos 3 columnas (col1, col2, col3)
     # ([1, 2, 1]): asigna tamaño a las columnas
     col1, col2, col3 = st.columns([1, 2, 1])
 
     # contenido del botón
     with col2:  
-        st.link_button("🎥 Texto del botón",
+        st.link_button("🎥 Condicionales If-Elif-Else",
                        # link como string
-                       "https://drive.google.com/file/d/13ww94f97Xn78QM7iEC6ypONKSaBR2Sop/view?usp=drive_link",
+                       "https://drive.google.com/file/d/1xLJIExWq8KcVO6qqdSgiyAQ95Zo0bXHy/view?usp=drive_link",
                        use_container_width=True
             )
 
@@ -186,5 +186,6 @@ else:
     
         components.html(html_content,height=600)
     
+
 
 
