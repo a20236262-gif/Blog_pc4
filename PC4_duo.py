@@ -81,11 +81,15 @@ elif  opciones == 'Experiencia':
     La programación me ha enseñado el funcionamiento de una página web detrás de la experiencia de un usuario.
     También, me ha ayudado a encontrar diferentes soluciones ante una misma situación.
     En el futuro me gustaría aprender más sobre programación orientada a Marketing Analytics, justamente orientada al rubro publicitario.
-
-    A continuación presento videos explicativos de mi autoría acerca del contenido del curso "Pensamiento Computacional para las Comunicaciones:"
     """
     st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_3}</div>", unsafe_allow_html=True)
 
+ texto_4 = """
+    A continuación presento videos explicativos de mi autoría acerca del contenido del curso "Pensamiento Computacional para las Comunicaciones:"
+    """
+    st.markdown(f"<div style='text-align: justify; font-size: 9px;'>{texto_4}</div>", unsafe_allow_html=True)
+
+    
     # Botones de Videos Ariana
     # Video 1 Ariana
         # Formato Google Drive (botón)
@@ -187,6 +191,7 @@ else:
     
         components.html(html_content,height=600)
     
+
 
 
 
