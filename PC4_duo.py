@@ -71,6 +71,10 @@ elif  opciones == 'Experiencia':
     # lista de emogis: https://streamlit-emoji-shortcodes-streamlit-app-gwckff.streamlit.app
     st.markdown("<h1 style='text-align: center; font-size: 50 px; color: black'>Nuestra experiencia en la programación 💻</h1>", unsafe_allow_html=True)
 
+    # Formato Google Drive (botón)
+    # Videos 1 y 2 Ariana
+    st.subheader("Videos explicativos del lenguaje Python")
+    
     # Alumno a: Ariana
     texto_3 = """
     El curso “Pensamiento Computacional para las Comunicaciones” es mi primera experiencia aprendiendo a programar.
@@ -81,9 +85,7 @@ elif  opciones == 'Experiencia':
     """
     st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_3}</div>", unsafe_allow_html=True)
      
-    # Formato Google Drive (botón)
-    # Videos 1 y 2 Ariana
-    st.subheader("Videos explicativos del lenguaje Python")
+    
     
     # Para centrar un botón 
     # creamos 3 columnas (col1, col2, col3)
@@ -186,6 +188,7 @@ else:
     
         components.html(html_content,height=600)
     
+
 
 
 
