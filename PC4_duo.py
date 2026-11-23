@@ -173,23 +173,69 @@ else:
     # Aquí todos los integrantes deben poner sus 3 gráficos y su mapa en la lista 
     # y aumentar la estructura condicional como sea necesaria
     # 10 en total (3 gráficos + 1 mapa) por integrante
-    graficos = ['Nube de palabrasHisograma: goles del Real Madrid anotados como local', 'Hisograma: goles del Real Madrid recibidos como visitante', 'Histogramas: goles del Levante U.D. anotados como visitante y recibidos como local'] 
+    graficos = ['WordCloud_Paco_Yunque', 'WordCloud_Reunion_Restaurante_Nostalgia', 'Hisograma1_Real_Madrid', 'Hisograma2_Real_Madrid', 'Histogramas_Levante_U.D.', 'Grafico_pastel_Real_Madrid', 'Grafico_pastel_Levante_U.D.', 'Grafico_barras1_Tarjetas_amarillas', 'Grafico_barras2_Tarjetas_amarillas', 'Mapa1_Pilotos', 'Mapa2_Pilotos'] 
     grafico_seleccionado = st.selectbox('Selecciona un gráfico', graficos)
-    
-    if grafico_seleccionado == 'Hisograma: goles del Real Madrid anotados como local':
+
+    # Nubes de palabras
+    if grafico_seleccionado == 'WordCloud_Paco_Yunque':
         # sibtitulo de gráfico
-        st.subheader("Hisograma: goles del Real Madrid anotados como local")
+        st.subheader("Nube de Palabras del primer capitulo del libro Paco Yunque.")
         texto_5 = """
-        Interpretación del Gráfico 1 (editar!)
+        Interpretación del Gráfico 1
         """
         # formato
         st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_5}</div>", unsafe_allow_html=True)
         # para centrar
         col1, col2, col3 = st.columns([1, 9, 1])
         with col2:
-                st.image("Histograma1_Adriana.png", width=800)
+                st.image("WordCloud_PacoYunque.png", width=800)
     
     # continuar con más elif (8 elif)
+    elif grafico_seleccionado == 'WordCloud_Reunion_Restaurante_Nostalgia':
+        st.subheader("Nube de Palabras del primer capitulo del libro Reunión en el Restaurante Nostalgia")
+        texto_6 = """
+        Interpretación del Gráfico 2
+        """
+        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_6}</div>", unsafe_allow_html=True)
+    
+        col1, col2, col3 = st.columns([1, 7, 1])
+        with col2:
+            st.image("WordCloud_Ariana.png", width=800)
+    # Histogramas
+    elif grafico_seleccionado == 'Hisograma1_Real_Madrid':
+        st.subheader("📊 Hisograma: goles del Real Madrid anotados como local")
+        texto_6 = """
+        Interpretación del Gráfico 2
+        """
+        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_6}</div>", unsafe_allow_html=True)
+    
+        col1, col2, col3 = st.columns([1, 7, 1])
+        with col2:
+            st.image("Histograma1_Adriana.png", width=800)
+    
+    elif grafico_seleccionado == 'Gráfico_2':
+        st.subheader("📊 Hisograma: goles del Real Madrid recibidos como visitante")
+        texto_6 = """
+        Interpretación del Gráfico 2
+        """
+        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_6}</div>", unsafe_allow_html=True)
+    
+        col1, col2, col3 = st.columns([1, 7, 1])
+        with col2:
+            st.image("Histograma2_Adriana.png", width=800)
+
+    elif grafico_seleccionado == 'Gráfico_2':
+        st.subheader("📊 Histogramas: goles del Levante U.D. anotados como visitante y recibidos como local")
+        texto_6 = """
+        Interpretación del Gráfico 2
+        """
+        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_6}</div>", unsafe_allow_html=True)
+    
+        col1, col2, col3 = st.columns([1, 7, 1])
+        with col2:
+            st.image("histograma_Ariana.png", width=800)
+    
+    # Gráfico de pastel
     elif grafico_seleccionado == 'Gráfico_2':
         st.subheader("📊 Gráfico 2: Familias lingüísticas")
         texto_6 = """
@@ -200,6 +246,40 @@ else:
         col1, col2, col3 = st.columns([1, 7, 1])
         with col2:
             st.image("lengua_familia_GB.png", width=800)
+
+    elif grafico_seleccionado == 'Gráfico_2':
+        st.subheader("📊 Gráfico 2: Familias lingüísticas")
+        texto_6 = """
+        Interpretación del Gráfico 2
+        """
+        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_6}</div>", unsafe_allow_html=True)
+    
+        col1, col2, col3 = st.columns([1, 7, 1])
+        with col2:
+            st.image("lengua_familia_GB.png", width=800)
+    # Gráfico de barras
+    elif grafico_seleccionado == 'Gráfico_2':
+        st.subheader("📊 Gráfico 2: Familias lingüísticas")
+        texto_6 = """
+        Interpretación del Gráfico 2
+        """
+        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_6}</div>", unsafe_allow_html=True)
+    
+        col1, col2, col3 = st.columns([1, 7, 1])
+        with col2:
+            st.image("lengua_familia_GB.png", width=800)
+
+    elif grafico_seleccionado == 'Gráfico_2':
+        st.subheader("📊 Gráfico 2: Familias lingüísticas")
+        texto_6 = """
+        Interpretación del Gráfico 2
+        """
+        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_6}</div>", unsafe_allow_html=True)
+    
+        col1, col2, col3 = st.columns([1, 7, 1])
+        with col2:
+            st.image("lengua_familia_GB.png", width=800)
+    
     
     else:
         st.subheader("🗺️ Mapa 1: Distribución geográfica")
@@ -213,6 +293,7 @@ else:
     
         components.html(html_content,height=600)
     
+
 
 
 
