@@ -283,7 +283,7 @@ else:
             st.image("Gráfico_barras_Ariana.png", width=800)
     
     # Mapas residencia de pilotos
-     elif grafico_seleccionado == 'Mapa 1 de Pilotos':
+    elif grafico_seleccionado == 'Mapa 1 de Pilotos':
         st.subheader("🗺️ Mapa del país de origen y datos de los pilotos Lewis Hamilton y Max Verstappen.")
         texto_6 = """
         Interpretación del Gráfico 2
@@ -307,28 +307,5 @@ else:
      
         components.html(html_content,height=600)
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
