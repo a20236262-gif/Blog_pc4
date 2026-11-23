@@ -85,7 +85,7 @@ elif  opciones == 'Experiencia':
     st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_3}</div>", unsafe_allow_html=True)
 
     texto_4 = """
-    A continuación presento videos explicativos de mi autoría acerca del contenido del curso "Pensamiento Computacional para las Comunicaciones:"
+    A continuación presento videos explicativos de mi autoría acerca del contenido del curso Pensamiento Computacional para las Comunicaciones:
     """
     st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_4}</div>", unsafe_allow_html=True)
 
@@ -109,7 +109,55 @@ elif  opciones == 'Experiencia':
         # Para centrar el botón
     col1, col2, col3 = st.columns([1, 2, 1])
 
-    # contenido del botón
+    # contenido del botón 2 Ariana
+    with col2:  
+        st.link_button("🎥 Condicionales If-Elif-Else",
+                       # link como string
+                       "https://drive.google.com/file/d/1xLJIExWq8KcVO6qqdSgiyAQ95Zo0bXHy/view?usp=drive_link",
+                       use_container_width=True
+            )
+   
+ # Subtítulo para Adriana
+    st.subheader("Adriana")
+    
+    # Alumno a: Adriana
+    texto_5 = """
+    Al inicio, el curso “Pensamiento Computacional para las Comunicaciones” fue complicado de entender, pues no tenía experiencia 
+    previa usando lenguajes de programación y pensaba que iba a ser bastante complicado e incluso imposible de aprender. 
+    No obstante, gracias al asesoramiento de la profesora y los recursos brindados comprendí que era cuestión de práctica. 
+    La programación me ha enseñado a resolver los problemas de diversas maneras, pero respetando las reglas establecidas. 
+    Asimismo, me enseñó a ser cuidadosa con los códigos y palabras que se usan. De programar me gusta poder crear páginas o blogs 
+    desde cero y ver el resultado final. En un futuro me gustaría seguir aprendiendo otros lenguajes de programación para así poder 
+    crear herramientas que me permitan tener un emprendimiento propio o aplicarlos al rubro de la publicidad en el que me encuentre.
+    """
+    st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_3}</div>", unsafe_allow_html=True)
+
+    texto_4 = """
+    A continuación presento videos explicativos de mi autoría acerca del contenido del curso Pensamiento Computacional para las Comunicaciones:
+    """
+    st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_4}</div>", unsafe_allow_html=True)
+
+    
+    # Botones de Videos Adriana
+    # Video 1 Adriana
+        # Formato Google Drive (botón)
+        # Para centrar un botón 
+        # creamos 3 columnas (col1, col2, col3)
+        # ([1, 2, 1]): asigna tamaño a las columnas
+    col1, col2, col3 = st.columns([1, 2, 1])
+
+    # contenido del botón 1 Adriana
+    with col2:  
+        st.link_button("🎥 Operadores booleanos",
+                       # link como string
+                       "https://drive.google.com/file/d/13ww94f97Xn78QM7iEC6ypONKSaBR2Sop/view?usp=drive_link",
+                       use_container_width=True
+            )
+    # Video 2 Adriana
+        # Para centrar el botón
+    col1, col2, col3 = st.columns([1, 2, 1])
+
+    # contenido del botón 2 Adriana
     with col2:  
         st.link_button("🎥 Condicionales If-Elif-Else",
                        # link como string
@@ -118,30 +166,6 @@ elif  opciones == 'Experiencia':
             )
    
 
-    # Alumno b: Adriana
-    texto_4 = """
-    Aquí escribe tu experiencia aprendiendo a programar. 
-    ¿Cómo te sentiste al principio?
-    ¿Qué te ha enseñado la programación?
-    ¿Qué te gusta de programar? 
-    ¿Qué te gustaría hacer con la programación en el futuro?
-    """
-    st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_4}</div>", unsafe_allow_html=True)
-        
-    # Formato YouTube
-    st.subheader("🎥 Título apropiado video 1")
-    st.video("https://www.youtube.com/watch?v=X_Z7d04x9-E")
-        
-    # Formato Google Drive
-    st.subheader("🎥 Título apropiado video 2")
-    
-    col1, col2, col3 = st.columns([1, 2, 1])
-    
-    with col2:  
-        st.link_button("🎥 Texto del botón",
-                       "https://drive.google.com/file/d/1REvRXSu3GuGD73w8j44135MkRiezd0gP/view?usp=drive_link",
-                       use_container_width=True
-             )
 
 # TERCERA SECCIÓN (gráficos)           
 else:
@@ -191,6 +215,7 @@ else:
     
         components.html(html_content,height=600)
     
+
 
 
 
