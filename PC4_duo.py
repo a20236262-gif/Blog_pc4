@@ -213,7 +213,7 @@ else:
         with col2:
             st.image("Histograma1_Adriana.png", width=800)
     
-    elif grafico_seleccionado == 'Gráfico_2':
+    elif grafico_seleccionado == 'Hisograma2_Real_Madrid':
         st.subheader("📊 Hisograma: goles del Real Madrid recibidos como visitante")
         texto_6 = """
         Interpretación del Gráfico 2
@@ -224,7 +224,7 @@ else:
         with col2:
             st.image("Histograma2_Adriana.png", width=800)
 
-    elif grafico_seleccionado == 'Gráfico_2':
+    elif grafico_seleccionado == 'Histogramas_Levante_U.D.':
         st.subheader("📊 Histogramas: goles del Levante U.D. anotados como visitante y recibidos como local")
         texto_6 = """
         Interpretación del Gráfico 2
@@ -236,7 +236,7 @@ else:
             st.image("histograma_Ariana.png", width=800)
     
     # Gráfico de pastel
-    elif grafico_seleccionado == 'Gráfico_2':
+    elif grafico_seleccionado == 'Grafico_pastel_Real_Madrid':
         st.subheader("📊 Gráfico 2: Familias lingüísticas")
         texto_6 = """
         Interpretación del Gráfico 2
@@ -247,7 +247,7 @@ else:
         with col2:
             st.image("lengua_familia_GB.png", width=800)
 
-    elif grafico_seleccionado == 'Gráfico_2':
+    elif grafico_seleccionado == 'Grafico_pastel_Levante_U.D.':
         st.subheader("📊 Gráfico 2: Familias lingüísticas")
         texto_6 = """
         Interpretación del Gráfico 2
@@ -293,6 +293,7 @@ else:
     
         components.html(html_content,height=600)
     
+
 
 
 
