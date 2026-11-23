@@ -171,7 +171,7 @@ else:
     st.markdown("<h1 style='text-align: center;font-size: 50 px; color: black'>Nuestra producción de gráfico</h1>", unsafe_allow_html=True)
     
     # 10 gráficos en total (1 nube de palabras + 3 gráficos + 1 mapa) por integrante
-    graficos = ['WordCloud de "Paco Yunque"', 'WordCloud de: Reunion en el Restaurante Nostalgia', 'Hisogramas del Real Madrid', 'Histogramas del Levante U.D.', 'Grafico de pastel del Real Madrid', 'Grafico de pastel del Levante U.D.', 'Grafico de barras 1 de Tarjetas amarillas', 'Grafico de barras 2 de Tarjetas amarillas', 'Mapa1_Pilotos', 'Mapa2_Pilotos'] 
+    graficos = ['WordCloud de "Paco Yunque"', 'WordCloud de: Reunion en el Restaurante Nostalgia', 'Hisogramas del Real Madrid', 'Histogramas del Levante U.D.', 'Grafico de pastel del Real Madrid', 'Grafico de pastel del Levante U.D.', 'Grafico de barras 1 de Tarjetas amarillas', 'Grafico de barras 2 de Tarjetas amarillas', 'Mapa 1 de Pilotos', 'Mapa 2 de Pilotos'] 
     grafico_seleccionado = st.selectbox('Selecciona un gráfico', graficos)
 
     # Nubes de palabras
@@ -269,7 +269,7 @@ else:
     
         col1, col2, col3 = st.columns([1, 7, 1])
         with col2:
-            st.image("lengua_familia_GB.png", width=800)
+            st.image("Gráfico_barras_Adriana.png", width=800)
 
     elif grafico_seleccionado == 'Grafico de barras 2 de Tarjetas amarillas':
         st.subheader("📊 Grafico de barras de las Tarjetas amarillas recibidas por los equipos como visitante durante la Liga española 2025-2026.")
@@ -280,21 +280,32 @@ else:
     
         col1, col2, col3 = st.columns([1, 7, 1])
         with col2:
-            st.image("lengua_familia_GB.png", width=800)
+            st.image("Gráfico_barras_Ariana.png", width=800)
     
+    # Mapas residencia de pilotos
+     elif grafico_seleccionado == 'Mapa 1 de Pilotos':
+        st.subheader("🗺️ Mapa del país de origen y datos de los pilotos Lewis Hamilton y Max Verstappen.")
+        texto_6 = """
+        Interpretación del Gráfico 2
+        """
+        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_6}</div>", unsafe_allow_html=True)
+    
+         with open("mapa_pilotos_Adriana.html", "r", encoding="utf-8") as mapa:
+                html_content = mapa.read()
     
     else:
-        st.subheader("🗺️ Mapa 1: Distribución geográfica")
+        st.subheader("🗺️ Mapa del país de origen y datos de los pilotos _ y _.")
         texto_7 = """
         Interpretación del mapa
         """
         st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_7}</div>", unsafe_allow_html=True)
         #  "r", encoding="utf-8": no editar    
-        with open("mapa_base.html", "r", encoding="utf-8") as mapa:
+        with open("mapa_Ariana.html", "r", encoding="utf-8") as mapa:
                 html_content = mapa.read()
     
         components.html(html_content,height=600)
     
+
 
 
 
