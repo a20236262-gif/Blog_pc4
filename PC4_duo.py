@@ -200,7 +200,7 @@ else:
     
         col1, col2, col3 = st.columns([1, 7, 1])
         with col2:
-            st.image("WordCloud_Ariana.png", width=800)
+            st.image("Wordcloud_Ariana.png", width=800)
     # Histogramas
     elif grafico_seleccionado == 'Hisograma1_Real_Madrid':
         st.subheader("📊 Hisograma: goles del Real Madrid anotados como local")
@@ -293,6 +293,7 @@ else:
     
         components.html(html_content,height=600)
     
+
 
 
 
