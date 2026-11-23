@@ -53,13 +53,11 @@ if opciones == 'Presentación':
     col1, col2 = st.columns(2)
     
     texto_2 = """
-    Aquí escribe una presentación creativa sobre ti.
-    ¿Quién eres? 
-    ¿De dónde eres? 
-    ¿Qué estudias? 
-    ¿Qué te gusta de tu carrera? 
-    ¿Qué te gustaría hacer en el futuro? 
-    ¿Qué te gusta hacer en tu tiempo libre?
+    Soy Adriana Orellana Marquina, estudiante de Publicidad en la PUCP y editora de este blog. Tengo 20 años y vivo en la ciudad de Lima en Perú. 
+    Voy en quinto ciclo de la carrera y durante este tiempo he aprendido que la publicidad se encuentra en todos lados y repercute en la 
+    toma de decisiones de las personas. Respecto a mi carrera, en un futuro me gustaría trabajar con grandes marcas en el extranjero. 
+    Como propósito personal, me gustaría tener un santuario y un refugio de animales. En mis tiempos libres me gusta ver series, 
+    escuchar música y manejar autos.
     """
     col1.markdown(f"<div style='text-align: justify; font-size: 15px;'>{texto_2}</div>", unsafe_allow_html=True)
     
@@ -132,10 +130,10 @@ elif  opciones == 'Experiencia':
     """
     st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_3}</div>", unsafe_allow_html=True)
 
-    texto_4 = """
+    texto_6 = """
     A continuación presento videos explicativos de mi autoría acerca del contenido del curso Pensamiento Computacional para las Comunicaciones:
     """
-    st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_4}</div>", unsafe_allow_html=True)
+    st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_6}</div>", unsafe_allow_html=True)
 
     
     # Botones de Videos Adriana
@@ -148,9 +146,9 @@ elif  opciones == 'Experiencia':
 
     # contenido del botón 1 Adriana
     with col2:  
-        st.link_button("🎥 Operadores booleanos",
+        st.link_button("🎥 Cambiar",
                        # link como string
-                       "https://drive.google.com/file/d/13ww94f97Xn78QM7iEC6ypONKSaBR2Sop/view?usp=drive_link",
+                       "https://drive.google.com/file/d/1x1KZ67Sw1NuriexHnWGQS28DgSEn2iUq/view?usp=sharing&t=422.4",
                        use_container_width=True
             )
     # Video 2 Adriana
@@ -215,6 +213,7 @@ else:
     
         components.html(html_content,height=600)
     
+
 
 
 
