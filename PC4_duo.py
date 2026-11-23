@@ -27,15 +27,14 @@ if opciones == 'Presentación':
     #encabezado 
     # <h1>: de encabezado
     # 'text align': para centrar
-    # Nombre del blog (editar!)
     # unsafe_allow_html=True: permite editar
     st.markdown("<h1 style='text-align: center; font-size: 50 px; color: black'>Sobre nosotras</h1>", unsafe_allow_html=True)
 
-    # Alumno a
+    # Alumno a: Ariana
     # (2): indica el número de columnas, no posición
     col1, col2 = st.columns(2)
-
-    # Caption: etiqueta debajo de la foto
+    
+    # Caption: Foto y etiqueta debajo de la foto
     col1.image("Foto_Ariana.jpg", caption='Ariana Jáuregui', width=300)
 
     # 3 comillas para los textos
@@ -47,10 +46,10 @@ if opciones == 'Presentación':
     Deporte que empecé a inicios de año y hoy ya me encuentro como cinturón celeste raya amarilla, un nivel novel aún. 
     Del karate rescato la disciplina y persistencia que este deporte me ayudó a desarrollar. 
     """
-    # markdown: personaliza el texto
+    # markdown para personalizar el texto
     col2.markdown(f"<div style='text-align: justify; font-size: 15px;color: black'>{texto}</div>", unsafe_allow_html=True)
 
-    # Alumno b
+    # Alumno b: Adriana
     col1, col2 = st.columns(2)
     
     texto_2 = """
@@ -68,29 +67,25 @@ if opciones == 'Presentación':
 
  # SEGUNDA SECCIÓN (Experiencia)   
 elif  opciones == 'Experiencia':
-    # Nombre a la sección de experiencia 💻 (personalizar !)
+    # Nombre a la sección
     # lista de emogis: https://streamlit-emoji-shortcodes-streamlit-app-gwckff.streamlit.app
-    st.markdown("<h1 style='text-align: center; font-size: 50 px; color: black'>Nombre a la sección de experiencia 💻</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center; font-size: 50 px; color: black'>Nuestra experiencia en la programación 💻</h1>", unsafe_allow_html=True)
 
-    # Alumno a
+    # Alumno a: Ariana
     texto_3 = """
-    Aquí escribe tu experiencia aprendiendo a programar. 
-    ¿Cómo te sentiste al principio? 
-    ¿Qué te ha enseñado la programación? 
-    ¿Qué te gusta de programar? 
-    ¿Qué te gustaría hacer con la programación en el futuro?
+    El curso “Pensamiento Computacional para las Comunicaciones” es mi primera experiencia aprendiendo a programar.
+    Al principio me sentí un poco intimidada por el lenguaje de python, pero con la orientación de la docente fue fácil adaptarse progresivamente.
+    La programación me ha enseñado el funcionamiento de una página web detrás de la experiencia de un usuario.
+    También, me ha ayudado a encontrar diferentes soluciones ante una misma situación.
+    En el futuro me gustaría aprender más sobre programación orientada a Marketing Analytics, justamente orientada al rubro publicitario.
     """
     st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_3}</div>", unsafe_allow_html=True)
-    
-    # Formato YouTube (previsualización en la página)
-    # st.subheader("🎥 Título apropiado video 1")
-    # st.video("https://www.youtube.com/watch?v=X_Z7d04x9-E")
-    
+     
     # Formato Google Drive (botón)
-    # copiar por cada video
-    st.subheader("🎥 Título apropiado video 2")
-
-    # Para centrar un botón:
+    # Videos 1 y 2 Ariana
+    st.subheader("Videos explicativos del lenguaje Python")
+    
+    # Para centrar un botón 
     # creamos 3 columnas (col1, col2, col3)
     # ([1, 2, 1]): asigna tamaño a las columnas
     col1, col2, col3 = st.columns([1, 2, 1])
@@ -99,9 +94,23 @@ elif  opciones == 'Experiencia':
     with col2:  
         st.link_button("🎥 Texto del botón",
                        # link como string
-                       "https://drive.google.com/file/d/1REvRXSu3GuGD73w8j44135MkRiezd0gP/view?usp=drive_link",
+                       "https://drive.google.com/file/d/13ww94f97Xn78QM7iEC6ypONKSaBR2Sop/view?usp=drive_link",
                        use_container_width=True
             )
+ # Para centrar un botón 
+    # creamos 3 columnas (col1, col2, col3)
+    # ([1, 2, 1]): asigna tamaño a las columnas
+    col1, col2, col3 = st.columns([1, 2, 1])
+
+    # contenido del botón
+    with col2:  
+        st.link_button("🎥 Texto del botón",
+                       # link como string
+                       "https://drive.google.com/file/d/13ww94f97Xn78QM7iEC6ypONKSaBR2Sop/view?usp=drive_link",
+                       use_container_width=True
+            )
+
+    
     # Aqui acaba el formato drive
 
     # Alumno b
@@ -177,4 +186,5 @@ else:
     
         components.html(html_content,height=600)
     
+
 
