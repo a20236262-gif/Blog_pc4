@@ -292,6 +292,8 @@ else:
     
          with open("mapa_pilotos_Adriana.html", "r", encoding="utf-8") as mapa:
                 html_content = mapa.read()
+             
+             components.html(html_content,height=600)
     
     else:
         st.subheader("🗺️ Mapa del país de origen y datos de los pilotos _ y _.")
@@ -302,9 +304,10 @@ else:
         #  "r", encoding="utf-8": no editar    
         with open("mapa_Ariana.html", "r", encoding="utf-8") as mapa:
                 html_content = mapa.read()
-    
+     
         components.html(html_content,height=600)
     
+
 
 
 
