@@ -237,7 +237,7 @@ else:
     
     # Gráfico de pastel
     elif grafico_seleccionado == 'Grafico_pastel_Real_Madrid':
-        st.subheader("📊 Gráfico 2: Familias lingüísticas")
+        st.subheader("📊 Gráfico de pastel: resultados del Real Madrid jugando como local en la liga española 2025-2026.")
         texto_6 = """
         Interpretación del Gráfico 2
         """
@@ -245,10 +245,10 @@ else:
     
         col1, col2, col3 = st.columns([1, 7, 1])
         with col2:
-            st.image("lengua_familia_GB.png", width=800)
+            st.image("Gráfico_pastel_Adriana.png", width=800)
 
     elif grafico_seleccionado == 'Grafico_pastel_Levante_U.D.':
-        st.subheader("📊 Gráfico 2: Familias lingüísticas")
+        st.subheader("📊 Gráfico de pastel: resultados del Levante U.D. jugando como local en la liga española 2025-2026.")
         texto_6 = """
         Interpretación del Gráfico 2
         """
@@ -256,7 +256,7 @@ else:
     
         col1, col2, col3 = st.columns([1, 7, 1])
         with col2:
-            st.image("lengua_familia_GB.png", width=800)
+            st.image("Gráfico_pastel_Ariana.png", width=800)
     # Gráfico de barras
     elif grafico_seleccionado == 'Gráfico_2':
         st.subheader("📊 Gráfico 2: Familias lingüísticas")
@@ -293,6 +293,7 @@ else:
     
         components.html(html_content,height=600)
     
+
 
 
 
