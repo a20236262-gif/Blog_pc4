@@ -170,14 +170,12 @@ else:
     # encabezado principal
     st.markdown("<h1 style='text-align: center;font-size: 50 px; color: black'>Nuestra producción de gráfico</h1>", unsafe_allow_html=True)
     
-    # Aquí todos los integrantes deben poner sus 3 gráficos y su mapa en la lista 
-    # y aumentar la estructura condicional como sea necesaria
-    # 10 en total (3 gráficos + 1 mapa) por integrante
-    graficos = ['WordCloud_Paco_Yunque', 'WordCloud_Reunion_Restaurante_Nostalgia', 'Hisograma1_Real_Madrid', 'Hisograma2_Real_Madrid', 'Histogramas_Levante_U.D.', 'Grafico_pastel_Real_Madrid', 'Grafico_pastel_Levante_U.D.', 'Grafico_barras1_Tarjetas_amarillas', 'Grafico_barras2_Tarjetas_amarillas', 'Mapa1_Pilotos', 'Mapa2_Pilotos'] 
+    # 10 gráficos en total (1 nube de palabras + 3 gráficos + 1 mapa) por integrante
+    graficos = ['WordCloud_Paco Yunque', 'WordCloud_Reunion_Restaurante_Nostalgia', 'Hisograma1_Real_Madrid', 'Hisograma2_Real_Madrid', 'Histogramas_Levante_U.D.', 'Grafico_pastel_Real_Madrid', 'Grafico_pastel_Levante_U.D.', 'Grafico_barras1_Tarjetas_amarillas', 'Grafico_barras2_Tarjetas_amarillas', 'Mapa1_Pilotos', 'Mapa2_Pilotos'] 
     grafico_seleccionado = st.selectbox('Selecciona un gráfico', graficos)
 
     # Nubes de palabras
-    if grafico_seleccionado == 'WordCloud_Paco_Yunque':
+    if grafico_seleccionado == 'WordCloud_Paco Yunque':
         # sibtitulo de gráfico
         st.subheader("Nube de Palabras del primer capitulo del libro Paco Yunque.")
         texto_5 = """
@@ -293,6 +291,7 @@ else:
     
         components.html(html_content,height=600)
     
+
 
 
 
