@@ -171,11 +171,11 @@ else:
     st.markdown("<h1 style='text-align: center;font-size: 50 px; color: black'>Nuestra producción de gráfico</h1>", unsafe_allow_html=True)
     
     # 10 gráficos en total (1 nube de palabras + 3 gráficos + 1 mapa) por integrante
-    graficos = ['WordCloud_Paco Yunque', 'WordCloud_Reunion_Restaurante_Nostalgia', 'Hisograma1_Real_Madrid', 'Histogramas_Levante_U.D.', 'Grafico_pastel_Real_Madrid', 'Grafico_pastel_Levante_U.D.', 'Grafico_barras1_Tarjetas_amarillas', 'Grafico_barras2_Tarjetas_amarillas', 'Mapa1_Pilotos', 'Mapa2_Pilotos'] 
+    graficos = ['WordCloud de "Paco Yunque"', 'WordCloud de: Reunion en el Restaurante Nostalgia', 'Hisogramas del Real Madrid', 'Histogramas del Levante U.D.', 'Grafico de pastel del Real Madrid', 'Grafico_pastel_Levante_U.D.', 'Grafico_barras1_Tarjetas_amarillas', 'Grafico_barras2_Tarjetas_amarillas', 'Mapa1_Pilotos', 'Mapa2_Pilotos'] 
     grafico_seleccionado = st.selectbox('Selecciona un gráfico', graficos)
 
     # Nubes de palabras
-    if grafico_seleccionado == 'WordCloud_Paco Yunque':
+    if grafico_seleccionado == 'WordCloud de "Paco Yunque"':
         # sibtitulo de gráfico
         st.subheader("Nube de Palabras del primer capitulo del libro Paco Yunque.")
         texto_5 = """
@@ -189,7 +189,7 @@ else:
                 st.image("WordCloud_PacoYunque.png", width=800)
     
     # continuar con más elif (8 elif)
-    elif grafico_seleccionado == 'WordCloud_Reunion_Restaurante_Nostalgia':
+    elif grafico_seleccionado == 'WordCloud de: Reunion en el Restaurante Nostalgia':
         st.subheader("Nube de Palabras del primer capitulo del libro Reunión en el Restaurante Nostalgia")
         texto_6 = """
         Interpretación del Gráfico 2
@@ -200,7 +200,7 @@ else:
         with col2:
             st.image("Wordcloud_Ariana.png", width=800)
     # Histogramas
-    elif grafico_seleccionado == 'Hisograma1_Real_Madrid':
+    elif grafico_seleccionado == 'Hisogramas del Real Madrid':
         st.subheader("📊 Hisograma: goles del Real Madrid anotados como local")
         texto_6 = """
         Interpretación del Gráfico 2
@@ -226,7 +226,7 @@ else:
         #with col2:
             #st.image("Histograma2_Adriana.png", width=800)
 
-    elif grafico_seleccionado == 'Histogramas_Levante_U.D.':
+    elif grafico_seleccionado == 'Histogramas del Levante U.D.':
         st.subheader("📊 Histogramas: goles del Levante U.D. anotados como visitante y recibidos como local")
         texto_6 = """
         Interpretación del Gráfico 2
@@ -295,6 +295,7 @@ else:
     
         components.html(html_content,height=600)
     
+
 
 
 
