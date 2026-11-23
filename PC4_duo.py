@@ -146,7 +146,7 @@ elif  opciones == 'Experiencia':
 
     # contenido del botón 1 Adriana
     with col2:  
-        st.link_button("🎥 Cambiar",
+        st.link_button("🎥 Operadores Booleanos",
                        # link como string
                        "https://drive.google.com/file/d/1x1KZ67Sw1NuriexHnWGQS28DgSEn2iUq/view?usp=sharing&t=422.4",
                        use_container_width=True
@@ -159,7 +159,7 @@ elif  opciones == 'Experiencia':
     with col2:  
         st.link_button("🎥 Condicionales If-Elif-Else",
                        # link como string
-                       "https://drive.google.com/file/d/1xLJIExWq8KcVO6qqdSgiyAQ95Zo0bXHy/view?usp=drive_link",
+                       "https://drive.google.com/file/d/1E3seXP3L0fppzUmWTKbrJwynP0vRxFX5/view?usp=sharing",
                        use_container_width=True
             )
    
@@ -168,13 +168,12 @@ elif  opciones == 'Experiencia':
 # TERCERA SECCIÓN (gráficos)           
 else:
     # encabezado principal
-    # (Nombre a la sección) editar!
-    st.markdown("<h1 style='text-align: center;font-size: 50 px; color: black'>Nombre a la sección</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center;font-size: 50 px; color: black'>Nuestra producción de gráfico</h1>", unsafe_allow_html=True)
     
     # Aquí todos los integrantes deben poner sus 3 gráficos y su mapa en la lista 
     # y aumentar la estructura condicional como sea necesaria
     # 10 en total (3 gráficos + 1 mapa) por integrante
-    graficos = ['Gráfico_1', 'Gráfico_2', 'Mapa_1'] 
+    graficos = ['Gráfico_Barras', 'Gráfico_2', 'Mapa_1'] 
     grafico_seleccionado = st.selectbox('Selecciona un gráfico', graficos)
     
     if grafico_seleccionado == 'Gráfico_1':
@@ -213,6 +212,7 @@ else:
     
         components.html(html_content,height=600)
     
+
 
 
 
