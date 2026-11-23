@@ -6,9 +6,8 @@
 # python -m streamlit run PC4_duo.py
 # ojo: detengo la ejecución con Ctrl + C en el terminal
     # y lo reestablezco con "python -m streamlit run PC4_duo.py" en el terminal 
-###
 
-
+# Importamos las librerías
 import streamlit as st
 from streamlit_option_menu import option_menu
 import streamlit.components.v1 as components
@@ -22,12 +21,6 @@ with st.sidebar:
         # link de repositorio de iconos: https://icons.getbootstrap.com 
         icons=['people-fill','1-circle', '2-circle'], menu_icon="people-fill", default_index=0)
 
-### Opción 2: Menú vertical
-# opciones_2 = option_menu(
-    # menu_title="Selecciona una sección: ", 
-    # options=['Presentación', 'Experiencia', 'Gráficos'], 
-    # icons=['0-circle','1-circle', '2-circle'], 
-    # menu_icon="cast", default_index=0, orientation="horizontal")
 
 # contenido de la PRIMERA SECCIÓN ()
 if opciones == 'Presentación':
@@ -36,7 +29,7 @@ if opciones == 'Presentación':
     # 'text align': para centrar
     # Nombre del blog (editar!)
     # unsafe_allow_html=True: permite editar
-    st.markdown("<h1 style='text-align: center; font-size: 50 px; color: black'>Blog informático</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center; font-size: 50 px; color: black'>Sobre nosotras</h1>", unsafe_allow_html=True)
 
     # Alumno a
     # (2): indica el número de columnas, no posición
@@ -71,7 +64,7 @@ if opciones == 'Presentación':
     """
     col1.markdown(f"<div style='text-align: justify; font-size: 15px;'>{texto_2}</div>", unsafe_allow_html=True)
     
-    col2.image("Foto_Ariana.jpg", caption='Adriana', width=300)
+    col2.image("Foto_Adriana.jpeg", caption='Adriana', width=300)
 
  # SEGUNDA SECCIÓN (Experiencia)   
 elif  opciones == 'Experiencia':
@@ -184,3 +177,4 @@ else:
     
         components.html(html_content,height=600)
     
+
