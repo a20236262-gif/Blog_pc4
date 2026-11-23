@@ -63,7 +63,7 @@ if opciones == 'Presentación':
     """
     col1.markdown(f"<div style='text-align: justify; font-size: 15px;'>{texto_2}</div>", unsafe_allow_html=True)
     
-    col2.image("Foto_Adriana.jpeg", caption='Adriana', width=300)
+    col2.image("Foto_Adriana.jpeg", caption='Adriana Orellana', width=300)
 
  # SEGUNDA SECCIÓN (Experiencia)   
 elif  opciones == 'Experiencia':
@@ -71,9 +71,8 @@ elif  opciones == 'Experiencia':
     # lista de emogis: https://streamlit-emoji-shortcodes-streamlit-app-gwckff.streamlit.app
     st.markdown("<h1 style='text-align: center; font-size: 50 px; color: black'>Nuestra experiencia en la programación 💻</h1>", unsafe_allow_html=True)
 
-    # Formato Google Drive (botón)
-    # Videos 1 y 2 Ariana
-    st.subheader("Videos explicativos del lenguaje Python")
+    # Subtítulo para Ariana
+    st.subheader("Ariana")
     
     # Alumno a: Ariana
     texto_3 = """
@@ -84,24 +83,24 @@ elif  opciones == 'Experiencia':
     En el futuro me gustaría aprender más sobre programación orientada a Marketing Analytics, justamente orientada al rubro publicitario.
     """
     st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_3}</div>", unsafe_allow_html=True)
-     
-    
-    
-    # Para centrar un botón 
-    # creamos 3 columnas (col1, col2, col3)
-    # ([1, 2, 1]): asigna tamaño a las columnas
+
+    # Botones de Videos Ariana
+    # Video 1 Ariana
+        # Formato Google Drive (botón)
+        # Para centrar un botón 
+        # creamos 3 columnas (col1, col2, col3)
+        # ([1, 2, 1]): asigna tamaño a las columnas
     col1, col2, col3 = st.columns([1, 2, 1])
 
-    # contenido del botón
+    # contenido del botón 1 Ariana
     with col2:  
-        st.link_button("🎥 Texto del botón",
+        st.link_button("🎥 Operadores booleanos",
                        # link como string
                        "https://drive.google.com/file/d/13ww94f97Xn78QM7iEC6ypONKSaBR2Sop/view?usp=drive_link",
                        use_container_width=True
             )
-    # video 2 de Ariana
-    # creamos 3 columnas (col1, col2, col3)
-    # ([1, 2, 1]): asigna tamaño a las columnas
+    # Video 2 Ariana
+        # Para centrar el botón
     col1, col2, col3 = st.columns([1, 2, 1])
 
     # contenido del botón
@@ -111,11 +110,9 @@ elif  opciones == 'Experiencia':
                        "https://drive.google.com/file/d/1xLJIExWq8KcVO6qqdSgiyAQ95Zo0bXHy/view?usp=drive_link",
                        use_container_width=True
             )
+   
 
-    
-    # Aqui acaba el formato drive
-
-    # Alumno b
+    # Alumno b: Adriana
     texto_4 = """
     Aquí escribe tu experiencia aprendiendo a programar. 
     ¿Cómo te sentiste al principio?
@@ -188,6 +185,7 @@ else:
     
         components.html(html_content,height=600)
     
+
 
 
 
