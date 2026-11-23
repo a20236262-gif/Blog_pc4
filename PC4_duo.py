@@ -171,7 +171,7 @@ else:
     st.markdown("<h1 style='text-align: center;font-size: 50 px; color: black'>Nuestra producción de gráfico</h1>", unsafe_allow_html=True)
     
     # 10 gráficos en total (1 nube de palabras + 3 gráficos + 1 mapa) por integrante
-    graficos = ['WordCloud de "Paco Yunque"', 'WordCloud de: Reunion en el Restaurante Nostalgia', 'Hisogramas del Real Madrid', 'Histogramas del Levante U.D.', 'Grafico de pastel del Real Madrid', 'Grafico_pastel_Levante_U.D.', 'Grafico_barras1_Tarjetas_amarillas', 'Grafico_barras2_Tarjetas_amarillas', 'Mapa1_Pilotos', 'Mapa2_Pilotos'] 
+    graficos = ['WordCloud de "Paco Yunque"', 'WordCloud de: Reunion en el Restaurante Nostalgia', 'Hisogramas del Real Madrid', 'Histogramas del Levante U.D.', 'Grafico de pastel del Real Madrid', 'Grafico de pastel del Levante U.D.', 'Grafico de barras 1 de Tarjetas amarillas', 'Grafico de barras 2 de Tarjetas amarillas', 'Mapa1_Pilotos', 'Mapa2_Pilotos'] 
     grafico_seleccionado = st.selectbox('Selecciona un gráfico', graficos)
 
     # Nubes de palabras
@@ -238,7 +238,7 @@ else:
             st.image("histograma_Ariana.png", width=800)
     
     # Gráfico de pastel
-    elif grafico_seleccionado == 'Grafico_pastel_Real_Madrid':
+    elif grafico_seleccionado == 'Grafico de pastel del Real Madrid':
         st.subheader("📊 Gráfico de pastel: resultados del Real Madrid jugando como local en la liga española 2025-2026.")
         texto_6 = """
         Interpretación del Gráfico 2
@@ -249,7 +249,7 @@ else:
         with col2:
             st.image("Gráfico_pastel_Adriana.png", width=800)
 
-    elif grafico_seleccionado == 'Grafico_pastel_Levante_U.D.':
+    elif grafico_seleccionado == 'Grafico de pastel del Levante U.D.':
         st.subheader("📊 Gráfico de pastel: resultados del Levante U.D. jugando como local en la liga española 2025-2026.")
         texto_6 = """
         Interpretación del Gráfico 2
@@ -260,8 +260,8 @@ else:
         with col2:
             st.image("Gráfico_pastel_Ariana.png", width=800)
     # Gráfico de barras
-    elif grafico_seleccionado == 'Gráfico_2':
-        st.subheader("📊 Gráfico 2: Familias lingüísticas")
+    elif grafico_seleccionado == 'Grafico de barras 1 de Tarjetas amarillas':
+        st.subheader("📊 Grafico de barras de las Tarjetas amarillas recibidas por los equipos como visitante durante la Liga española 2025-2026.")
         texto_6 = """
         Interpretación del Gráfico 2
         """
@@ -271,8 +271,8 @@ else:
         with col2:
             st.image("lengua_familia_GB.png", width=800)
 
-    elif grafico_seleccionado == 'Gráfico_2':
-        st.subheader("📊 Gráfico 2: Familias lingüísticas")
+    elif grafico_seleccionado == 'Grafico de barras 2 de Tarjetas amarillas':
+        st.subheader("📊 Grafico de barras de las Tarjetas amarillas recibidas por los equipos como visitante durante la Liga española 2025-2026.")
         texto_6 = """
         Interpretación del Gráfico 2
         """
@@ -295,6 +295,7 @@ else:
     
         components.html(html_content,height=600)
     
+
 
 
 
