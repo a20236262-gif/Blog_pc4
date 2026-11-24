@@ -90,22 +90,22 @@ elif  opciones == 'Experiencia':
     
     # Videos Ariana
         # Formato Google Drive (botón)
-        # Para centrar un botón 
-        # creamos 3 columnas (col1, col2, col3)
-        # ([1, 4, 4, 1]): asigna tamaño a las columnas
-    col1, col2, col3, col4 = st.columns([1, 4, 4, 1])
+        # Para centrar el botón y la imagen
+        # creamos 4 columnas (col1, col2, col3, col4)
+        # ([1, 6, 6, 1]): asigna tamaño a las columnas
+    col1, col2, col3, col4 = st.columns([1, 6, 6, 1])
 
-    # Caption: Foto y etiqueta debajo de la foto
-    col2.image("rata_ariana.jpg", width=250)
+    # añadimos una imagen a la columna 2 porque pensamos que se veía simple
+    col2.image("rata_ariana.jpg", width=200)
     
-    # contenido del botón 1 Ariana
+    # contenido del botón 1 Ariana en la columna 3
     with col3:  
         st.link_button("🎥 Operadores booleanos",
                        # link como string
                        "https://drive.google.com/file/d/13ww94f97Xn78QM7iEC6ypONKSaBR2Sop/view?usp=drive_link",
                        use_container_width=True
             )
-    # contenido del botón 2 Ariana
+    # contenido del botón 2 Ariana en la columna 3
     with col3:  
         st.link_button("🎥 Condicionales If-Elif-Else",
                        # link como string
@@ -138,23 +138,24 @@ elif  opciones == 'Experiencia':
     # Video 1 Adriana
         # Formato Google Drive (botón)
         # Para centrar un botón 
-        # creamos 3 columnas (col1, col2, col3)
-        # ([1, 2, 1]): asigna tamaño a las columnas
-    col1, col2, col3 = st.columns([1, 2, 1])
+        # creamos 4 columnas (col1, col2, col3, col4)
+        # ([1, 6, 6, 1]): asigna tamaño a las columnas
+    col1, col2, col3, col4 = st.columns([1, 6, 6, 1])
 
-    # contenido del botón 1 Adriana
-    with col2:  
+    # añadimos una imagen porque pensamos que se veía simple
+    # Caption: Foto y etiqueta debajo de la foto
+    col2.image("gato_adriana.jpg", width=200)
+    
+    # contenido del botón 1 Adriana en la columna 3
+    with col3:  
         st.link_button("🎥 Operadores Booleanos",
                        # link como string
                        "https://drive.google.com/file/d/1x1KZ67Sw1NuriexHnWGQS28DgSEn2iUq/view?usp=sharing&t=422.4",
                        use_container_width=True
             )
-    # Video 2 Adriana
-        # Para centrar el botón
-    col1, col2, col3 = st.columns([1, 2, 1])
-
-    # contenido del botón 2 Adriana
-    with col2:  
+    
+    # contenido del botón 2 Adriana en la columna 3
+    with col3:  
         st.link_button("🎥 Condicionales If-Elif-Else",
                        # link como string
                        "https://drive.google.com/file/d/1E3seXP3L0fppzUmWTKbrJwynP0vRxFX5/view?usp=sharing",
