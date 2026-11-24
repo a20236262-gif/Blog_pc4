@@ -178,11 +178,17 @@ else:
     if grafico_seleccionado == 'WordCloud de "Paco Yunque"':
         # sibtitulo de gráfico
         st.subheader("Nube de Palabras del primer capitulo del libro Paco Yunque.")
-        texto_5 = """
-        Interpretación del Gráfico 1
+        texto_7 = """
+        Para la creación de esta nube de palabras se eligió trabajar con minúsculas para evitar errores de ejecución. 
+        Asimismo para que las palabras se vean simétricas. También se eliminaron algunos signos de puntuación, por ejemplo, 
+        puntos, comas, guiones, comillas, etc. Para así limpiar y estandarizar la información, es decir, para que el programa 
+        logre reconocer las palabras sin el uso de estos signos. Asimismo, para la elección de los stopwords, se priorizaron 
+        eliminar los pronombres, preposiciones y artículos. Ya que no aportan información adicional. Todas estas decisiones fueron 
+        importantes para que la nube de palabras sea correcta, ya que se muestran palabras que definen el cuento, de esta manera, 
+        una persona que vea la nube podrá entender quiénes son los personajes principales y de qué trata la historia.
         """
         # formato
-        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_5}</div>", unsafe_allow_html=True)
+        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_7}</div>", unsafe_allow_html=True)
         # para centrar
         col1, col2, col3 = st.columns([1, 9, 1])
         with col2:
@@ -191,10 +197,22 @@ else:
     # continuar con más elif (8 elif)
     elif grafico_seleccionado == 'WordCloud de: Reunion en el Restaurante Nostalgia':
         st.subheader("Nube de Palabras del primer capitulo del libro Reunión en el Restaurante Nostalgia")
-        texto_6 = """
-        Interpretación del Gráfico 2
+        texto_8 = """
+        Para esta nube de palabras o Wordcloud se trabajó con minúsculas para facilitar la limpieza de palabras stopword, 
+        a pesar de que las palabras con más frecuencias eran los nombres de los personajes (Pearl, Ezra, Cody, Jenny y Beck) 
+        las cuales se entenderían mejor con sus iniciales en mayúscula. Respecto a los caracteres, se decidió eliminar 
+        todos porque ninguno me pareció relevante para el relato. Entre los signos depurados estuvieron signos de exclamación, 
+        interrogación, puntos y comas, pero sobre todo, comillas españolas y guiones de diálogo. Acerca de las stopwords, 
+        se decidió omitir palabras conectores, prepociones, verbos baúl (hacer, tener, poner, haber) y todas las conjugaciones 
+        del verbo decir. Al ser una novela con diálogos, las variaciones del verbo decir eran bastante comunes, por lo que se decidió 
+        eliminar ya que no pertenecían a la historia. Así mismo, es pertinente mencionar que el pronombre "él" no fue considerado 
+        como Stopword porque en el relato este pronombre es usado para evocar el recuerdo de un personaje, el cual se evita mencionar 
+        su nombre; prueba de ello es que esta palabra es de las que más frecuencia tiene. Finalmente, en la parte estética, se seleccionó 
+        como color de fondo al lila por ser el color que está en la portada del libro impreso. Así mismo, la paleta de colores es 
+        "managua" porque sus tonos azules y naranjas cobran relación con los escenarios más memorables del libro, los cuales transcurren 
+        de noche y tarde. Además, el fondo claro contrasta con los colores más vivos de las palabras.
         """
-        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_6}</div>", unsafe_allow_html=True)
+        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_8}</div>", unsafe_allow_html=True)
     
         col1, col2, col3 = st.columns([1, 7, 1])
         with col2:
@@ -203,7 +221,11 @@ else:
     elif grafico_seleccionado == 'Hisogramas del Real Madrid':
         st.subheader("📊 Hisograma: goles del Real Madrid anotados como local")
         texto_6 = """
-        Interpretación del Gráfico 2
+        En resumen, los resultados demuestran que el Real Madrid tiene un gran equipo a nivel defensivo y ofensivo. 
+        Esto se demuestra porque en el primer gráfico se observa una tendencia del equipo a marcar entre 2 y 3 goles 
+        en sus 8 partidos como local. Mientras que, en el segundo gráfico el mayor patrón es que el equipo mantuvo su 
+        portería a cero en ocho de los 19 partidos. Esto demuestra que el Real Madrid suele marcar varios goles cuando 
+        juega como local y solamente recibe poco o casi nada de goles cuando juega como visitante.
         """
         st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_6}</div>", unsafe_allow_html=True)
     
@@ -215,21 +237,15 @@ else:
         with col2:
             st.image("Histograma2_Adriana.png", width=800)
         
-    #elif grafico_seleccionado == 'Hisograma2_Real_Madrid':
-        #st.subheader("📊 Hisograma: goles del Real Madrid recibidos como visitante")
-        #texto_6 = """
-        #Interpretación del Gráfico 2
-        #"""
-        #st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_6}</div>", unsafe_allow_html=True)
-    
-        #col1, col2, col3 = st.columns([1, 7, 1])
-        #with col2:
-            #st.image("Histograma2_Adriana.png", width=800)
-
     elif grafico_seleccionado == 'Histogramas del Levante U.D.':
         st.subheader("📊 Histogramas: goles del Levante U.D. anotados como visitante y recibidos como local")
         texto_6 = """
-        Interpretación del Gráfico 2
+        Se eligió comparar los goles que Levante U.D. anotó como visitante y los que recibió como equipo local. 
+        Respecto a sus anotaciones, Levante parece ser un equipo constante en la cantidad de goles.
+        Tiende a anotar entre 0 y 1 goles como visitante; de los 19 partidos rara vez anotó más de 2 goles. 
+        Respecto a los goles recibidos, los goles tienden a ocilar entre 0 y 2 recibidos, con un notable pico en la 
+        barra de 2 goles. En conclusión, comparando ambos gráficos vemos que los equipos rivales tienen mejor 
+        desempeño que Levante U.D. cuando se juega como visitante.
         """
         st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_6}</div>", unsafe_allow_html=True)
     
@@ -296,7 +312,7 @@ else:
         components.html(html_content,height=600)
     
     else:
-        st.subheader("🗺️ Mapa del país de origen y datos de los pilotos _ y _.")
+        st.subheader("🗺️ Mapa del país de origen y datos de los pilotos Sergio Perez y Daniel Ricciardo.")
         texto_7 = """
         Interpretación del mapa
         """
@@ -307,6 +323,7 @@ else:
      
         components.html(html_content,height=600)
     
+
 
 
 
