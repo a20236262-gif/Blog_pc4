@@ -110,7 +110,7 @@ elif  opciones == 'Experiencia':
                        # link como string
                        "https://drive.google.com/file/d/13ww94f97Xn78QM7iEC6ypONKSaBR2Sop/view?usp=drive_link",
                        use_container_width=True
-   
+            )
     # contenido del botón 2 Ariana
     with col3:  
         st.link_button("🎥 Condicionales If-Elif-Else",
