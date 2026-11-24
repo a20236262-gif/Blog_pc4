@@ -70,7 +70,7 @@ elif  opciones == 'Experiencia':
     st.markdown("<h1 style='text-align: center; font-size: 50 px; color: black'>Nuestra experiencia en la programación 💻</h1>", unsafe_allow_html=True)
 
     # Subtítulo para Ariana
-    st.subheader("Ariana 🩷🐰")
+    st.subheader("Ariana 🩷🐭")
     
     # Alumno a: Ariana
     texto_3 = """
