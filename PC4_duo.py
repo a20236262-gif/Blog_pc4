@@ -220,14 +220,14 @@ else:
     # Histogramas
     elif grafico_seleccionado == 'Hisogramas del Real Madrid':
         st.subheader("📊 Hisograma: goles del Real Madrid anotados como local")
-        texto_6 = """
+        texto_9 = """
         En resumen, los resultados demuestran que el Real Madrid tiene un gran equipo a nivel defensivo y ofensivo. 
         Esto se demuestra porque en el primer gráfico se observa una tendencia del equipo a marcar entre 2 y 3 goles 
         en sus 8 partidos como local. Mientras que, en el segundo gráfico el mayor patrón es que el equipo mantuvo su 
         portería a cero en ocho de los 19 partidos. Esto demuestra que el Real Madrid suele marcar varios goles cuando 
         juega como local y solamente recibe poco o casi nada de goles cuando juega como visitante.
         """
-        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_6}</div>", unsafe_allow_html=True)
+        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_9}</div>", unsafe_allow_html=True)
     
         col1, col2, col3 = st.columns([1, 7, 1])
         with col2:
@@ -239,7 +239,7 @@ else:
         
     elif grafico_seleccionado == 'Histogramas del Levante U.D.':
         st.subheader("📊 Histogramas: goles del Levante U.D. anotados como visitante y recibidos como local")
-        texto_6 = """
+        texto_10 = """
         Se eligió comparar los goles que Levante U.D. anotó como visitante y los que recibió como equipo local. 
         Respecto a sus anotaciones, Levante parece ser un equipo constante en la cantidad de goles.
         Tiende a anotar entre 0 y 1 goles como visitante; de los 19 partidos rara vez anotó más de 2 goles. 
@@ -247,7 +247,7 @@ else:
         barra de 2 goles. En conclusión, comparando ambos gráficos vemos que los equipos rivales tienen mejor 
         desempeño que Levante U.D. cuando se juega como visitante.
         """
-        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_6}</div>", unsafe_allow_html=True)
+        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_10}</div>", unsafe_allow_html=True)
     
         col1, col2, col3 = st.columns([1, 7, 1])
         with col2:
@@ -256,10 +256,12 @@ else:
     # Gráfico de pastel
     elif grafico_seleccionado == 'Grafico de pastel del Real Madrid':
         st.subheader("📊 Gráfico de pastel: resultados del Real Madrid jugando como local en la liga española 2025-2026.")
-        texto_6 = """
-        Interpretación del Gráfico 2
+        texto_11 = """
+        El gráfico circular demuestra que el Real Madrid tuvo una gran temporada en el 2025-2026. 
+        Debido a que ganó casi la totalidad de sus partidos como local, con un sólido 84.2%, equivalente 
+        a los 16 partidos de los 19 en total. Mientras que solo perdió un 10.5% y apenas empató con un 5.3%.
         """
-        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_6}</div>", unsafe_allow_html=True)
+        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_11}</div>", unsafe_allow_html=True)
     
         col1, col2, col3 = st.columns([1, 7, 1])
         with col2:
@@ -267,10 +269,14 @@ else:
 
     elif grafico_seleccionado == 'Grafico de pastel del Levante U.D.':
         st.subheader("📊 Gráfico de pastel: resultados del Levante U.D. jugando como local en la liga española 2025-2026.")
-        texto_6 = """
-        Interpretación del Gráfico 2
+        texto_12 = """
+        Los resultados totales de los 19 partidos que el Levante U.D. jugó como local reflejan el rendimiento 
+        medio del equipo. Las categorías de "Ganados" y "Perdidos" tienen el mismo porcentaje (36.8%); mientras
+        que "Empatados" se mantiene en 26.3%, un porcentaje cercano a la tercera parte. En conclusión, el grafico 
+        del desempeño de Levante U.D. jugando como local nos muestra que jugar en su propio estadio no fue un factor 
+        determinante para obtener ventaja en el torneo.
         """
-        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_6}</div>", unsafe_allow_html=True)
+        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_12}</div>", unsafe_allow_html=True)
     
         col1, col2, col3 = st.columns([1, 7, 1])
         with col2:
@@ -278,10 +284,13 @@ else:
     # Gráfico de barras
     elif grafico_seleccionado == 'Grafico de barras 1 de Tarjetas amarillas':
         st.subheader("📊 Grafico de barras de las Tarjetas amarillas recibidas por los equipos como visitante durante la Liga española 2025-2026.")
-        texto_6 = """
-        Interpretación del Gráfico 2
+        texto_13 = """
+        A partir del gráfico de barras se demuestra que durante la temporada 2025-2026 de la 
+        Liga Española todos los equipos recibieron en promedio de 2 a 3 tarjetas amarillas por 
+        partido cuando jugaban como visitantes. Esto demuestra que es una liga competitiva, 
+        pero no tan agresiva, ya que las tarjetas amarillas son inferiores a 5.
         """
-        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_6}</div>", unsafe_allow_html=True)
+        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_13}</div>", unsafe_allow_html=True)
     
         col1, col2, col3 = st.columns([1, 7, 1])
         with col2:
@@ -289,10 +298,14 @@ else:
 
     elif grafico_seleccionado == 'Grafico de barras 2 de Tarjetas amarillas':
         st.subheader("📊 Grafico de barras de las Tarjetas amarillas recibidas por los equipos como visitante durante la Liga española 2025-2026.")
-        texto_6 = """
-        Interpretación del Gráfico 2
+        texto_14 = """
+        Al revisar el gráfico se observa que todos los equipos han tenido tarjeta amarilla. 
+        Predomina un promedio de 2 tarjetas amarillas por partido en 2/3 del total de equipos, 
+        mientras la tercera parte restante presenta 3 tarjetas amarillas en promedio. 
+        A partir ello podemos concluir que obtener al menos dos tarjetas amarillas son la regla 
+        cuando se juega como visitante.
         """
-        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_6}</div>", unsafe_allow_html=True)
+        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_14}</div>", unsafe_allow_html=True)
     
         col1, col2, col3 = st.columns([1, 7, 1])
         with col2:
@@ -301,10 +314,17 @@ else:
     # Mapas residencia de pilotos
     elif grafico_seleccionado == 'Mapa 1 de Pilotos':
         st.subheader("🗺️ Mapa del país de origen y datos de los pilotos Lewis Hamilton y Max Verstappen.")
-        texto_6 = """
-        Interpretación del Gráfico 2
+        texto_15 = """
+        Elegí presentar la información en la ventana emergente (popup) de acuerdo a lo que solicitaban en la tarea. 
+        El orden establecido era nombre del piloto, escudería, fotografía del piloto y el puntaje total. 
+        Respecto al contenido del popup interactivo, elegí el color rojo para mostrar los marcadores, ya que es un 
+        color distintivo y fácil de reconocer. Por otro lado, seleccioné el icono del carro, ya que la información 
+        es sobre pilotos de carreras de autos. Por último, respecto a los elementos HTML, usé las etiquetas b 
+        para mostrar el nombre del piloto en negrita y h1 para definir el nombre como título principal. 
+        Asimismo, utilicé i para mostrar el puntaje total en cursiva, para que se diferencia del resto de información. 
+        También, elegí el color azul para nombrar la escudería, para que así tenga diferentes características que los otros datos.
         """
-        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_6}</div>", unsafe_allow_html=True)
+        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_15}</div>", unsafe_allow_html=True)
     
         with open("mapa_pilotos_Adriana.html", "r", encoding="utf-8") as mapa:
                 html_content = mapa.read()
@@ -313,16 +333,24 @@ else:
     
     else:
         st.subheader("🗺️ Mapa del país de origen y datos de los pilotos Sergio Perez y Daniel Ricciardo.")
-        texto_7 = """
-        Interpretación del mapa
+        texto_16 = """
+        Para que en el mapa se pueda ver desde América hasta Oceanía, elejí un zoom inicial de "2" . 
+        Respecto al pop-up, este tiene un tamaño de 400 para que el nombre de la escudería, el cual 
+        en ambos casos es largo, no se corte en dos línes. Así mismo, este contiene 3 datos y una imagen 
+        de cada piloto. Los datos están ordenados en Nombre del piloto (título en negrita), escudería (subtítulo), 
+        y puntaje total de temporada 2016 (párrafo). Considero pertinente esta distribución porque visualmente 
+        hay una jerarquía, me importa que destaquen el nombre y la escudería, mientras los puntos pueden pasar 
+        a segundo plano ya que son de una temporada pasada. La imagen tiene forma redonda, con dimensiones de 170 
+        de ancho y 150 de alto; ello para que se pueda ver mejor al piloto y su entorno.
         """
-        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_7}</div>", unsafe_allow_html=True)
+        st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_16}</div>", unsafe_allow_html=True)
         #  "r", encoding="utf-8": no editar    
         with open("mapa_Ariana.html", "r", encoding="utf-8") as mapa:
                 html_content = mapa.read()
      
         components.html(html_content,height=600)
     
+
 
 
 
