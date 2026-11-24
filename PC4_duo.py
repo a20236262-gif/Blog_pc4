@@ -187,7 +187,7 @@ else:
         eliminar los pronombres, preposiciones y artículos. Ya que no aportan información adicional. Todas estas decisiones fueron 
         importantes para que la nube de palabras sea correcta, ya que se muestran palabras que definen el cuento, de esta manera, 
         una persona que vea la nube podrá entender quiénes son los personajes principales y de qué trata la historia.
-        
+        .
         """
         # formato
         st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_7}</div>", unsafe_allow_html=True)
@@ -213,6 +213,7 @@ else:
         como color de fondo al lila por ser el color que está en la portada del libro impreso. Así mismo, la paleta de colores es 
         "managua" porque sus tonos azules y naranjas cobran relación con los escenarios más memorables del libro, los cuales transcurren 
         de noche y tarde. Además, el fondo claro contrasta con los colores más vivos de las palabras.
+        .
         """
         st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_8}</div>", unsafe_allow_html=True)
     
