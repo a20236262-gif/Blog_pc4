@@ -19,7 +19,7 @@ with st.sidebar:
         # icons (secciones)
         # menu_icons (icono del menú)
         # link de repositorio de iconos: https://icons.getbootstrap.com 
-        icons=['people-fill','1-circle', '2-circle'], menu_icon="relleno-de-estrellas", default_index=0)
+        icons=['people-fill','1-circle', '2-circle'], menu_icon="U+F588", default_index=0)
 
 
 # contenido de la PRIMERA SECCIÓN ()
