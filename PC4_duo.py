@@ -100,7 +100,7 @@ elif  opciones == 'Experiencia':
     
     # contenido del botón 1 Ariana en la columna 3
     with col3:  
-        st.link_button("🎥 Operadores booleanos",
+        st.link_button("🎥 Operadores Booleanos",
                        # link como string
                        "https://drive.google.com/file/d/13ww94f97Xn78QM7iEC6ypONKSaBR2Sop/view?usp=drive_link",
                        use_container_width=True
@@ -187,6 +187,7 @@ else:
         eliminar los pronombres, preposiciones y artículos. Ya que no aportan información adicional. Todas estas decisiones fueron 
         importantes para que la nube de palabras sea correcta, ya que se muestran palabras que definen el cuento, de esta manera, 
         una persona que vea la nube podrá entender quiénes son los personajes principales y de qué trata la historia.
+        
         """
         # formato
         st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_7}</div>", unsafe_allow_html=True)
