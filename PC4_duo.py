@@ -171,7 +171,9 @@ else:
     st.markdown("<h1 style='text-align: center;font-size: 50 px; color: black'>Nuestra producción de gráfico</h1>", unsafe_allow_html=True)
     
     # 10 gráficos en total (1 nube de palabras + 3 gráficos + 1 mapa) por integrante
-    graficos = ['WordCloud de "Paco Yunque"', 'WordCloud de: Reunion en el Restaurante Nostalgia', 'Hisogramas del Real Madrid', 'Histogramas del Levante U.D.', 'Grafico de pastel del Real Madrid', 'Grafico de pastel del Levante U.D.', 'Grafico de barras 1 de Tarjetas amarillas', 'Grafico de barras 2 de Tarjetas amarillas', 'Mapa 1 de Pilotos', 'Mapa 2 de Pilotos'] 
+    graficos = ['WordCloud de "Paco Yunque"', 'WordCloud de "Reunion en el Restaurante Nostalgia"', 'Hisogramas del Real Madrid', 
+                'Histogramas del Levante U.D.', 'Grafico de pastel del Real Madrid', 'Grafico de pastel del Levante U.D.', 
+                'Grafico de barras 1 de Tarjetas amarillas', 'Grafico de barras 2 de Tarjetas amarillas', 'Mapa 1 de Pilotos', 'Mapa 2 de Pilotos'] 
     grafico_seleccionado = st.selectbox('Selecciona un gráfico', graficos)
 
     # Nubes de palabras
@@ -195,7 +197,7 @@ else:
                 st.image("WordCloud_PacoYunque.png", width=800)
     
     # continuar con más elif (8 elif)
-    elif grafico_seleccionado == 'WordCloud de: Reunion en el Restaurante Nostalgia':
+    elif grafico_seleccionado == 'WordCloud de "Reunion en el Restaurante Nostalgia"':
         st.subheader("📖 Nube de Palabras del primer capitulo del libro Reunión en el Restaurante Nostalgia")
         texto_8 = """
         Para esta nube de palabras o Wordcloud se trabajó con minúsculas para facilitar la limpieza de palabras stopword, 
