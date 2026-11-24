@@ -177,7 +177,7 @@ else:
     # Nubes de palabras
     if grafico_seleccionado == 'WordCloud de "Paco Yunque"':
         # sibtitulo de gráfico
-        st.subheader("Nube de Palabras del primer capitulo del libro Paco Yunque.")
+        st.subheader("📖 Nube de Palabras del primer capitulo del libro Paco Yunque.")
         texto_7 = """
         Para la creación de esta nube de palabras se eligió trabajar con minúsculas para evitar errores de ejecución. 
         Asimismo para que las palabras se vean simétricas. También se eliminaron algunos signos de puntuación, por ejemplo, 
@@ -196,7 +196,7 @@ else:
     
     # continuar con más elif (8 elif)
     elif grafico_seleccionado == 'WordCloud de: Reunion en el Restaurante Nostalgia':
-        st.subheader("Nube de Palabras del primer capitulo del libro Reunión en el Restaurante Nostalgia")
+        st.subheader("📖 Nube de Palabras del primer capitulo del libro Reunión en el Restaurante Nostalgia")
         texto_8 = """
         Para esta nube de palabras o Wordcloud se trabajó con minúsculas para facilitar la limpieza de palabras stopword, 
         a pesar de que las palabras con más frecuencias eran los nombres de los personajes (Pearl, Ezra, Cody, Jenny y Beck) 
@@ -255,7 +255,7 @@ else:
     
     # Gráfico de pastel
     elif grafico_seleccionado == 'Grafico de pastel del Real Madrid':
-        st.subheader("📊 Gráfico de pastel: resultados del Real Madrid jugando como local en la liga española 2025-2026.")
+        st.subheader("🍰 Gráfico de pastel: resultados del Real Madrid jugando como local en la liga española 2025-2026.")
         texto_11 = """
         El gráfico circular demuestra que el Real Madrid tuvo una gran temporada en el 2025-2026. 
         Debido a que ganó casi la totalidad de sus partidos como local, con un sólido 84.2%, equivalente 
@@ -268,7 +268,7 @@ else:
             st.image("Gráfico_pastel_Adriana.png", width=800)
 
     elif grafico_seleccionado == 'Grafico de pastel del Levante U.D.':
-        st.subheader("📊 Gráfico de pastel: resultados del Levante U.D. jugando como local en la liga española 2025-2026.")
+        st.subheader("🍰 Gráfico de pastel: resultados del Levante U.D. jugando como local en la liga española 2025-2026.")
         texto_12 = """
         Los resultados totales de los 19 partidos que el Levante U.D. jugó como local reflejan el rendimiento 
         medio del equipo. Las categorías de "Ganados" y "Perdidos" tienen el mismo porcentaje (36.8%); mientras
@@ -283,7 +283,7 @@ else:
             st.image("GrafPas_Ariana.png", width=800)
     # Gráfico de barras
     elif grafico_seleccionado == 'Grafico de barras 1 de Tarjetas amarillas':
-        st.subheader("📊 Grafico de barras de las Tarjetas amarillas recibidas por los equipos como visitante durante la Liga española 2025-2026.")
+        st.subheader("🧮 Grafico de barras de las Tarjetas amarillas recibidas por los equipos como visitante durante la Liga española 2025-2026.")
         texto_13 = """
         A partir del gráfico de barras se demuestra que durante la temporada 2025-2026 de la 
         Liga Española todos los equipos recibieron en promedio de 2 a 3 tarjetas amarillas por 
@@ -297,7 +297,7 @@ else:
             st.image("Gráfico_barras_Adriana.png", width=800)
 
     elif grafico_seleccionado == 'Grafico de barras 2 de Tarjetas amarillas':
-        st.subheader("📊 Grafico de barras de las Tarjetas amarillas recibidas por los equipos como visitante durante la Liga española 2025-2026.")
+        st.subheader("🧮 Grafico de barras de las Tarjetas amarillas recibidas por los equipos como visitante durante la Liga española 2025-2026.")
         texto_14 = """
         Al revisar el gráfico se observa que todos los equipos han tenido tarjeta amarilla. 
         Predomina un promedio de 2 tarjetas amarillas por partido en 2/3 del total de equipos, 
