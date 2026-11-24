@@ -171,7 +171,7 @@ else:
     st.markdown("<h1 style='text-align: center;font-size: 50 px; color: black'>Nuestra producción de gráfico</h1>", unsafe_allow_html=True)
     
     # 10 gráficos en total (1 nube de palabras + 3 gráficos + 1 mapa) por integrante
-    graficos = ['WordCloud de "Paco Yunque"', 'WordCloud de "Reunion en el Restaurante Nostalgia"', 'Hisogramas del Real Madrid', 
+    graficos = ['WordCloud de "Paco Yunque"', 'WordCloud de "Reunion en el Restaurante Nostalgia"', 'Histogramas del Real Madrid', 
                 'Histogramas del Levante U.D.', 'Grafico de pastel del Real Madrid', 'Grafico de pastel del Levante U.D.', 
                 'Grafico de barras 1 de Tarjetas amarillas', 'Grafico de barras 2 de Tarjetas amarillas', 'Mapa 1 de Pilotos', 'Mapa 2 de Pilotos'] 
     grafico_seleccionado = st.selectbox('Selecciona un gráfico', graficos)
@@ -220,8 +220,8 @@ else:
         with col2:
             st.image("Wordcloud_Ariana.png", width=800)
     # Histogramas
-    elif grafico_seleccionado == 'Hisogramas del Real Madrid':
-        st.subheader("📊 Hisograma: goles del Real Madrid anotados como local")
+    elif grafico_seleccionado == 'Histogramas del Real Madrid':
+        st.subheader("📊 Histograma: goles del Real Madrid anotados como local")
         texto_9 = """
         En resumen, los resultados demuestran que el Real Madrid tiene un gran equipo a nivel defensivo y ofensivo. 
         Esto se demuestra porque en el primer gráfico se observa una tendencia del equipo a marcar entre 2 y 3 goles 
