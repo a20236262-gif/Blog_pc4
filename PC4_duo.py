@@ -61,7 +61,7 @@ if opciones == 'Presentación':
     """
     col1.markdown(f"<div style='text-align: justify; font-size: 15px;'>{texto_2}</div>", unsafe_allow_html=True)
     
-    col2.image("Foto_Adriana.jpeg", caption='Adriana Orellana', width=300)
+    col2.image("Foto2_Adriana.jpeg", caption='Adriana Orellana', width=300)
 
  # SEGUNDA SECCIÓN (Experiencia)   
 elif  opciones == 'Experiencia':
@@ -280,7 +280,7 @@ else:
     
         col1, col2, col3 = st.columns([1, 7, 1])
         with col2:
-            st.image("Gráfico_pastel_Ariana.png", width=800)
+            st.image("GrafPas_Ariana.png", width=800)
     # Gráfico de barras
     elif grafico_seleccionado == 'Grafico de barras 1 de Tarjetas amarillas':
         st.subheader("📊 Grafico de barras de las Tarjetas amarillas recibidas por los equipos como visitante durante la Liga española 2025-2026.")
@@ -309,7 +309,7 @@ else:
     
         col1, col2, col3 = st.columns([1, 7, 1])
         with col2:
-            st.image("Gráfico_barras_Ariana.png", width=800)
+            st.image("GrafBar_Ariana.png", width=800)
     
     # Mapas residencia de pilotos
     elif grafico_seleccionado == 'Mapa 1 de Pilotos':
