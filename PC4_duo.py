@@ -87,32 +87,26 @@ elif  opciones == 'Experiencia':
     """
     st.markdown(f"<div style='text-align: justify; font-size: 18px;'>{texto_4}</div>", unsafe_allow_html=True)
     
-    # jiji intentare dos columnas
-     # (2): indica el número de columnas, no posición
-    col1, col2 = st.columns(2)
     
-   
-
-
     # Video 1 Ariana
         # Formato Google Drive (botón)
         # Para centrar un botón 
         # creamos 3 columnas (col1, col2, col3)
-        # ([1, 2, 2, 1]): asigna tamaño a las columnas
-    col1, col2, col3, col4 = st.columns([1, 2, 2, 1])
+        # ([1, 1]): asigna tamaño a las columnas
+    col1, col2 = st.columns([1, 1])
 
     # Caption: Foto y etiqueta debajo de la foto
-    col2.image("rata_ariana.jpg", width=250)
+    col1.image("rata_ariana.jpg", width=250)
     
     # contenido del botón 1 Ariana
-    with col3:  
+    with col2:  
         st.link_button("🎥 Operadores booleanos",
                        # link como string
                        "https://drive.google.com/file/d/13ww94f97Xn78QM7iEC6ypONKSaBR2Sop/view?usp=drive_link",
                        use_container_width=True
             )
     # contenido del botón 2 Ariana
-    with col3:  
+    with col2:  
         st.link_button("🎥 Condicionales If-Elif-Else",
                        # link como string
                        "https://drive.google.com/file/d/1xLJIExWq8KcVO6qqdSgiyAQ95Zo0bXHy/view?usp=drive_link",
