@@ -20,7 +20,7 @@ with st.sidebar:
         # menu_icons (icono del menú)
         # link de repositorio de iconos: https://icons.getbootstrap.com 
         # Default index = primera sección en mostrr          
-        icons=['people-fill','trophy-fill', 'bar-chart-line-fill'], menu_icon="star-fill", default_index=1)
+        icons=['people-fill','trophy-fill', 'bar-chart-line-fill'], menu_icon="star-fill", default_index=0)
 
 
 # contenido de la PRIMERA SECCIÓN ()
