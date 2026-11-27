@@ -4,7 +4,7 @@ primaryColor = "#4237D4"
 #color de fondo
 backgroundColor = "#D9D6FF"
 #color de fondo secundario de contenedores
-secondaryBackgroundColor = "#9D96FA"
+secondaryBackgroundColor = "#8181EB"
 font = "Raleway"
 # De googlefont
 codeFont = "Raleway:https://fonts.googleapis.com/css2?family=Raleway&display=swap"
