@@ -8,5 +8,6 @@ secondaryBackgroundColor = "#E8E3D9"
 font = "Raleway"
 # De googlefont
 codeFont = "Raleway:https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+# color del texto
 textColor = "#E8E3D9"
 
