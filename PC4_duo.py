@@ -19,7 +19,8 @@ with st.sidebar:
         # icons (secciones)
         # menu_icons (icono del menú)
         # link de repositorio de iconos: https://icons.getbootstrap.com 
-        icons=['people-fill','trophy-fill', 'bar-chart-line-fill'], menu_icon="star-fill", default_index=0)
+                           
+        icons=['people-fill','trophy-fill', 'bar-chart-line-fill'], menu_icon="star-fill", default_index=1)
 
 
 # contenido de la PRIMERA SECCIÓN ()
