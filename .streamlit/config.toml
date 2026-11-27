@@ -1,13 +1,13 @@
 [theme]
 #color destacado
-primaryColor = "#99181c"
+primaryColor = "#4237D4"
 #color de fondo
-backgroundColor = "#ececec"
+backgroundColor = "#D9D6FF"
 #color de fondo secundario de contenedores
-secondaryBackgroundColor = "#E8E3D9"
+secondaryBackgroundColor = "#9D96FA"
 font = "Raleway"
 # De googlefont
 codeFont = "Raleway:https://fonts.googleapis.com/css2?family=Raleway&display=swap"
 # color del texto
-textColor = "#E8E3D9"
+textColor = "#000000"
 
